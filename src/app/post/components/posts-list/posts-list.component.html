@@ -1,0 +1,31 @@
+<div class="container">
+  <app-category-bar
+    [posts]="posts$"
+    (categoryEmitted)="catReceived($event)"
+  ></app-category-bar>
+
+  <h2>Lista Post</h2>
+  <div class="d-flex gap-2 justify-content-center">
+    <ng-container *ngFor="let post of posts$ | async; let i = index">
+      <a
+        [routerLink]="['post', post.id]"
+        class="text-decoration-none text-black"
+      >
+        <div class="card w-100" *ngIf="i < 3">
+          <div class="card-body">
+            <h5 class="card-title">{{ post.titolo }}</h5>
+            <small
+              >Autore: <strong>{{ post.autore }}</strong></small
+            >
+            <br />
+            <small class="card-subtitle mb-2 text-body-secondary">
+              Category: {{ post.categoria }}
+            </small>
+            <p class="card-text">{{ post.testo }}</p>
+            <p class="card-text">Data: {{ post.dataCreazione }}</p>
+          </div>
+        </div>
+      </a>
+    </ng-container>
+  </div>
+</div>

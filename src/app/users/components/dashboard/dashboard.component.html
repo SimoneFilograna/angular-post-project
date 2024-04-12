@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Profilo personale di {{ user?.username }}</h1>
+
+  <div class="row">
+    <div class="col d-flex flex-column gap-2">
+      <p>
+        Username: <strong>{{ user?.username }}</strong>
+      </p>
+      <p>
+        Password : <strong>{{ user?.password! | hidePass }}</strong>
+      </p>
+      <p>
+        Nome Penna: <strong>{{ user?.nomePenna ?? "ND" }}</strong>
+      </p>
+      <p>
+        Level: <strong>{{ user?.ruolo }}</strong>
+      </p>
+    </div>
+    <div class="col">
+      <a>
+        <button class="btn btn-danger">Modifica Profilo</button>
+      </a>
+    </div>
+  </div>
+</div>

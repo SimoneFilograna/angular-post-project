@@ -1,0 +1,73 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "titolo": "Primo Post",
+      "testo": "Testo prova del primo post lunghissimo",
+      "categoria": "Attualità",
+      "autore": "Json Marco",
+      "dataCreazione": "2024-04-12"
+    },
+    {
+      "id": "2",
+      "titolo": "Secondo Post",
+      "testo": "Secondo testo lunghissimo prova",
+      "categoria": "Cronaca",
+      "autore": "Marco Rossi",
+      "dataCreazione": "2024-02-12"
+    },
+    {
+      "id": "3",
+      "titolo": "Terzo Post",
+      "testo": "Terzo testo di prova lunghissimo ",
+      "categoria": "Sport",
+      "autore": "Nicola Verdi",
+      "dataCreazione": "2024-03-12"
+    },
+    {
+      "id": "4",
+      "titolo": "Quarto Post",
+      "testo": "Quarto testo di prova lunghissimo",
+      "categoria": "Politica",
+      "autore": "Luca Marco",
+      "dataCreazione": "2023-04-12"
+    },
+    {
+      "id": "5",
+      "titolo": "Quinto Post",
+      "testo": "Quinto Testo prova del primo post lunghissimo",
+      "categoria": "Attualità",
+      "autore": "Pollo Flare",
+      "dataCreazione": "2023-12-12"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "password",
+      "nomePenna": "",
+      "ruolo": "Admin"
+    },
+    {
+      "id": "2",
+      "username": "scrittore",
+      "password": "password",
+      "nomePenna": "scrittore1",
+      "ruolo": "Scrittore"
+    },
+    {
+      "id": "3",
+      "username": "lettore",
+      "password": "password",
+      "nomePenna": "",
+      "ruolo": "Lettore"
+    },
+    {
+      "id": "db82",
+      "username": "prova1",
+      "password": "prova1",
+      "ruolo": "Lettore"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<div class="container" *ngIf="post">
+  <div class="row">
+    <div class="col d-flex flex-column gap-2">
+      <h1>{{ post.titolo }}</h1>
+      <p>Category: {{ post.categoria }}</p>
+      <p>{{ post.testo }}</p>
+      <small
+        >Autore: <strong>{{ post.autore }}</strong></small
+      >
+      <small>Data: {{ post.dataCreazione }}</small>
+    </div>
+  </div>
+</div>

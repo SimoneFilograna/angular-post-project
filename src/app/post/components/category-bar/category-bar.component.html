@@ -2,7 +2,7 @@
   <ng-container *ngFor="let post of posts | async">
     <div class="col-xs-12 col-sm-2">
       <a (click)="emitCat(post.categoria)">
-        <button class="btn btn-danger">
+        <button class="btn btn-danger w-100 p-1 text-center">
           {{ post.categoria }}
         </button>
       </a>

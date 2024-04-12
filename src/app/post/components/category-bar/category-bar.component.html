@@ -1,9 +1,11 @@
-<div class="d-flex gap-2 my-3" *ngIf="posts">
+<div class="row g-3 my-3 justify-content-center" *ngIf="posts">
   <ng-container *ngFor="let post of posts | async">
-    <a (click)="emitCat(post.categoria)">
-      <button class="btn btn-danger">
-        {{ post.categoria }}
-      </button>
-    </a>
+    <div class="col-xs-12 col-sm-2">
+      <a (click)="emitCat(post.categoria)">
+        <button class="btn btn-danger">
+          {{ post.categoria }}
+        </button>
+      </a>
+    </div>
   </ng-container>
 </div>
